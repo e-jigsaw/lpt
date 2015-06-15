@@ -4,8 +4,17 @@
   "description": "last month photo from my tumblr",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lsc index.ls",
+    "fetch": "lsc fetch.ls",
+    "download": "rm -rf images && mkdir images && lsc download.ls"
   },
   "author": "jigsaw (http://jgs.me)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "livescript": "^1.4.0",
+    "lson": "^1.0.3",
+    "request": "^2.57.0",
+    "tumblr.js": "0.0.5"
+  }
 }
