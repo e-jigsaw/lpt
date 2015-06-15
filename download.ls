@@ -16,4 +16,5 @@ download = (list)->
       slicedUrls = list.slice 1
       if slicedUrls.length > 0 then download slicedUrls
 
+console.log "Photos length: #{urls.length}"
 download urls

@@ -13,7 +13,7 @@ get = (offset = 0)-> client.posts do
   type: \photo
   offset: offset
   (err, res)->
-    console.log offset
+    console.log "Fetching: #{offset}"
     isFinish = false
     for post in res.posts
       postedMonth = new Date post.date .getMonth!
