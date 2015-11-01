@@ -1,6 +1,8 @@
 lpt
 ===
 
+[![Dependency Status](https://david-dm.org/e-jigsaw/lpt.svg)](https://david-dm.org/e-jigsaw/lpt)
+
 last month photo from my tumblr
 
 # Config
