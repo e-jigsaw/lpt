@@ -2,3 +2,4 @@ node_modules
 .config.lson
 images
 urls.json
+files.json
