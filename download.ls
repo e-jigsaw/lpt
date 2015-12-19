@@ -5,16 +5,13 @@ require! {
 }
 
 download = (list)->
-  target = list[0]
-  splitedUrl = target.split \/
-  filename = splitedUrl[splitedUrl.length - 1]
-  request do
+  target = list.shift!
+  filename = target.split \/ |> -> it[*-1]
+  err, res, body <- request do
     url: target
     encoding: null
-    (err, res, body)->
-      writeFileSync "images/#{filename}", body
-      slicedUrls = list.slice 1
-      if slicedUrls.length > 0 then download slicedUrls
+  writeFileSync "images/#{filename}", body
+  if list.length > 0 then download list
 
 console.log "Photos length: #{urls.length}"
 download urls

@@ -4,10 +4,10 @@
   "description": "last month photo from my tumblr",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run fetch && npm run download",
+    "start": "npm run fetch && npm run download && npm run modify",
     "fetch": "lsc fetch.ls",
-    "download": "rm -rf images && mkdir images && lsc download.ls"
+    "download": "rm -rf images && mkdir images && lsc download.ls",
+    "modify": "rm -rf converted-images && mkdir converted-images && lsc modify.ls"
   },
   "author": "jigsaw (http://jgs.me)",
   "license": "MIT",
