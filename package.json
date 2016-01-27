@@ -14,7 +14,7 @@
   "dependencies": {
     "livescript": "^1.4.0",
     "lson": "^1.0.3",
-    "request": "^2.67.0",
+    "request": "^2.69.0",
     "tumblr.js": "0.0.7"
   }
 }
