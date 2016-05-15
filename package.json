@@ -12,7 +12,7 @@
   "author": "jigsaw (http://jgs.me)",
   "license": "MIT",
   "dependencies": {
-    "livescript": "^1.4.0",
+    "livescript": "^1.5.0",
     "lson": "^1.0.3",
     "request": "^2.72.0",
     "tumblr.js": "1.0.0"
